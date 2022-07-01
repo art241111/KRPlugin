@@ -1,5 +1,7 @@
 package robot
 
+import kotlinx.coroutines.flow.StateFlow
+
 interface Robot {
     val dataHandler: StateFlow<String>
     val isConnect: StateFlow<Boolean>
