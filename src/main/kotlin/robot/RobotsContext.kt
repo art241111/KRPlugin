@@ -1,11 +1,9 @@
 package robot
 
-import kotlinx.coroutines.flow.StateFlow
-
 interface RobotsContext {
-    fun getRobotsName(): StateFlow<List<String>>
+    fun getRobotsName(): List<String>
     fun getRobot(name: String) : Robot
-    fun addRobot(onAddRobot: () -> Unit = {})
+    fun addRobot(name: String, ip:String, port: Int)
     fun deleteRobot(name: String)
     fun changeRobotName(oldName: String, newName: String)
 }

@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "ru.robowizard"
-version = "1.0"
+version = ""
 
 repositories {
     jcenter()

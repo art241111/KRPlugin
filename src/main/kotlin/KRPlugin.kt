@@ -6,14 +6,14 @@ import robot.RobotsContext
 import window.WindowContext
 
 interface KRPlugin {
+    fun setWindowContext (windowContext: WindowContext) {}
+    fun setRobotsContext(robotsContext: RobotsContext) {}
+    fun setClientsContext(clientsContext: ClientsContext) {}
+    fun setNoteContext(noteContext: NoteContext) {}
+    fun setFilesContext(filesContext: FilesContext) {}
+
     @Composable
     fun content()
 
-    fun init(
-        windowContext: WindowContext,
-        robotsContext: RobotsContext,
-        clientsContext: ClientsContext,
-        noteContext: NoteContext,
-        filesContext: FilesContext,
-    )
+
 }
