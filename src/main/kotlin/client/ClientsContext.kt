@@ -1,5 +1,7 @@
 package client
 
+import kotlinx.coroutines.flow.StateFlow
+
 interface ClientsContext {
     fun getClientsName(): StateFlow<List<String>>
     fun getClient(name: String) : Client
