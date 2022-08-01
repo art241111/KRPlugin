@@ -19,4 +19,6 @@ interface ClientsContext {
      * Opens an additional window that will be responsible for selecting the connection option.
      **/
     fun connect(): Client
+    fun disconnect(ip: String, port: Int, endMessage: String = "")
+    fun disconnect()
 }

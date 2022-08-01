@@ -19,4 +19,7 @@ interface RobotsContext {
      * Opens an additional window that will be responsible for selecting the connection option.
      **/
     fun connect(): Robot
+
+    fun disconnect(ip: String, port: Int, endMessage: String = "")
+    fun disconnect()
 }

@@ -10,6 +10,8 @@ interface Robot {
     val dataHandler: SharedFlow<String>
     val isConnect: StateFlow<Boolean>
 
+    fun getInformation(): RobotData?
+
     fun send(message: String)
 //    fun send(command: KCommand)
 //    suspend fun sendWithRequest(message:String): String
