@@ -14,6 +14,4 @@ interface KRPlugin {
 
     @Composable
     fun content()
-
-
 }

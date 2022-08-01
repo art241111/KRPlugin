@@ -14,7 +14,4 @@ interface Robot {
 //    fun send(command: KCommand)
 //    suspend fun sendWithRequest(message:String): String
 //    suspend fun sendWithRequest(command: Command): String
-
-    fun connect()
-    fun disconnect()
 }
